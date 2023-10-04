@@ -62,3 +62,39 @@
     background-repeat: no-repeat;
     padding: 150px;
   }
+
+  .footer {
+    background-color: #293d45;
+    color: white;
+    padding: 5px 0;
+  }
+
+  .columnright{
+    text-align: right;
+  }
+
+  .columnleft{
+    text-align: left;
+  }
+
+/* styles.css */
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color:#293d45;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTopBtn.show {
+
+    display: block;
+}
+
+  

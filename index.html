@@ -8,10 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="resource\css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
 
     <title>University of Bauan</title>
   </head>
-
+<body>
   <div class="container">
     <section class="section-with-margin">
       <div class="row">
@@ -28,29 +31,52 @@
       </div>
     </section>
   </div>
+  
+  <button id="backToTopBtn" class="hidden">Back to Top</button>
 
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <p>ARIZALA, JAENI ALISON S.
-        </p>
-        <p>DUMAWAL, LEONARD JOHN B.
-        </p>
-        <p>MALAGA, ANDREA KATE C.
-        </p>
+        <div class="col-md-6 columnleft">
+          <p>ARIZALA, JAENI ALISON S.</p>
+          <p>DUMAWAL, LEONARD JOHN B.</p>
+          <p>MALAGA, ANDREA KATE C.</p>
+        </div>
+        <div class="col-md-6 columnright">
+          <p>&copy; 2023 University of Bauan</p>
         </div>
       </div>
     </div>
   </footer>
+  
 
 
-  <body>
-
-
+    
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+      // script.js
+
+      // Get the button element
+      const backToTopButton = document.getElementById("backToTopBtn");
+
+      // Show the button when the user scrolls down 20px from the top
+      window.addEventListener("scroll", () => {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              backToTopButton.classList.add("show");
+          } else {
+              backToTopButton.classList.remove("show");
+          }
+      });
+
+      // Scroll to the top of the page when the button is clicked
+      backToTopButton.addEventListener("click", () => {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      });
+
+    </script>
   </body>
 </html>
 
