@@ -1,55 +1,88 @@
-*{
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-}
+/*JAENI*/
+.section-with-margin {
+    text-align: center;
+  }
 
- /* Center the loading bar container */
- .loading-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+  .section-with-margin::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
 
-/* Custom styles for the progress bar */
-.custom-progress-bar {
-    position: relative;
-    width: 300px;
-    height: 20px;
-    background-color: #f5f5f5;
-}
+  .section-with-margin h2 {
+    color: aliceblue;
+    font-size: 75px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
 
-.custom-progress-bar .progress-bar {
-    background-color: #007bff;
-}
+  .section-with-margin p {
+    color: aliceblue;
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .button-spacing{
+    background-color: #191D23;
+    border-color: aliceblue;
+    margin-top: 50px;
+  }
 
-/* Style for the logo */
-.logo {
-    width: 100px; /* Adjust the logo size as needed */
-    height: auto;
-    margin-bottom: 20px;
-}
+  .button-spacing1{
+    color: #191D23;
+    background-color: aliceblue;
+    border-color: #191D23;
+    margin-top: 180px;
+  }
 
-.logo{
-    height: 90px;
-}
+  .button-lg{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100px;
+    width: 300px
+  }
 
-.bg-custom{
-    background-color: #293d45; 
-}
+  .column1 {
+    background-image: linear-gradient(#131213a3, #131213a3), url('../img/column1.jpg'); 
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat;
+    padding: 110px
+  }
 
-
-.header{
-    min-height: 100vh;
-    background-image: linear-gradient(#1c1c1c64,#1c1c1c64),url('../img/background.jpg');
-    background-position: center;
+  .column2 {
+    margin-top: -30px;
+    background-image: linear-gradient(#131213a3, #131213a3), url('../img/column2.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 150px;
+  }
+
+  .footer {
+    background-color: #293d45;
+    color: white;
+    padding: 5px 0;
+  }
+
+
+/* styles.css */
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color:#293d45;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.card1{
-    background-color:#0d0c0ce8;
+#backToTopBtn.show {
+
+    display: block;
 }
