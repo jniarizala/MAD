@@ -1,12 +1,38 @@
-.gallery {
-    height: 100vh;
-    overflow: hidden;
-    background-image: url('../img/NewsAnnouncementBG.jpg');
+body {
+    background-image: linear-gradient(#1c1c1c5f, #1c1c1c5f), url('../img/BG1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
-    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+
+}
+
+.scrollable {
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 12px;
+}
+
+.card.news-card, .jumbotron {
+    background-color: rgba(82, 82, 82, 0.8);
+    color: white;
+}
+
+.carousel-img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Scrollbar Settings*/
+.scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.801);
+    border-radius: 4px;
+}
+.scrollable::-webkit-scrollbar-track {
+    background-color: #dddddd77;
 }
