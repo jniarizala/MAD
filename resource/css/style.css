@@ -1,3 +1,50 @@
+  <<<<<<< Leonard-Branch
+
+body {
+    background-image: linear-gradient(#1c1c1c5f, #1c1c1c5f), url('../img/BG1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 25px;
+
+}
+
+.scrollable {
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 12px;
+}
+
+.card.news-card, .jumbotron {
+    background-color: rgba(82, 82, 82, 0.8);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.card.news-card:hover, .jumbotron:hover {
+    background-color: rgba(82, 82, 82, 1);
+}
+
+.carousel-img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Scrollbar Settings*/
+.scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.801);
+    border-radius: 4px;
+}
+.scrollable::-webkit-scrollbar-track {
+    background-color: #dddddd77;
+  
+  <<<<<<< Andrea-Branch
+=======
 *{
     padding: 0;
     margin: 0;
