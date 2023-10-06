@@ -1,3 +1,94 @@
+/*JAENI*/
+.section-with-margin {
+    text-align: center;
+  }
+
+  .section-with-margin::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  .section-with-margin h2 {
+    color: aliceblue;
+    font-size: 75px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .section-with-margin p {
+    color: aliceblue;
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .button-spacing{
+    background-color: #191D23;
+    border-color: aliceblue;
+    margin-top: 50px;
+  }
+
+  .button-spacing1{
+    color: #191D23;
+    background-color: aliceblue;
+    border-color: #191D23;
+    margin-top: 180px;
+  }
+
+  .button-lg{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100px;
+    width: 300px
+  }
+
+  .column1 {
+    background-image: linear-gradient(#131213a3, #131213a3), url('../img/column1.jpg'); 
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat;
+    padding: 110px
+  }
+
+  .column2 {
+    margin-top: -30px;
+    background-image: linear-gradient(#131213a3, #131213a3), url('../img/column2.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px;
+  }
+
+  .footer {
+    background-color: #293d45;
+    color: white;
+    padding: 5px 0;
+  }
+
+
+/* styles.css */
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color:#293d45;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTopBtn.show {
+
+    display: block;
+}
+
+/*LEONARD*/
+=======
 .newsannouncement {
     background-image: linear-gradient(#1c1c1c5f, #1c1c1c5f), url('../img/BG1.jpg');
     background-size: cover;
@@ -42,6 +133,8 @@
     background-color: #dddddd77;
   
 }
+
+/*ANDREA*/
 
 *{
     padding: 0;
