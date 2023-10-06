@@ -1,3 +1,4 @@
+/*JAENI*/
 .section-with-margin {
     text-align: center;
   }
@@ -86,4 +87,110 @@
     display: block;
 }
 
+/*LEONARD*/
+=======
+.newsannouncement {
+    background-image: linear-gradient(#1c1c1c5f, #1c1c1c5f), url('../img/BG1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 25px;
+}
+
+
+.scrollable {
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 12px;
+}
+
+.card.news-card, .jumbotron {
+    background-color: rgba(82, 82, 82, 0.8);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.card.news-card:hover, .jumbotron:hover {
+    background-color: rgba(82, 82, 82, 1);
+}
+
+.carousel-img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Scrollbar Settings*/
+.scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.801);
+    border-radius: 4px;
+}
+.scrollable::-webkit-scrollbar-track {
+    background-color: #dddddd77;
   
+}
+
+/*ANDREA*/
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+ /* Center the loading bar container */
+ .loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Custom styles for the progress bar */
+.custom-progress-bar {
+    position: relative;
+    width: 300px;
+    height: 20px;
+    background-color: #f5f5f5;
+}
+
+.custom-progress-bar .progress-bar {
+    background-color: #007bff;
+}
+
+/* Style for the logo */
+.logo {
+    width: 100px; /* Adjust the logo size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.logo{
+    height: 100px;
+}
+
+.bg-custom{
+    background-color: #293d45; 
+}
+
+
+
+
+.header {
+    height: 100vh;
+    background-image:linear-gradient(#1c1c1c64,#1c1c1c64) ,url('../img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.card1{
+    background-color:#0d0c0ce8;
+}
