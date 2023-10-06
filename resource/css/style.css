@@ -17,6 +17,11 @@ body {
 .card.news-card, .jumbotron {
     background-color: rgba(82, 82, 82, 0.8);
     color: white;
+    transition: background-color 0.3s ease;
+}
+
+.card.news-card:hover, .jumbotron:hover {
+    background-color: rgba(82, 82, 82, 1);
 }
 
 .carousel-img {
